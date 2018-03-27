@@ -11,7 +11,7 @@ class Stopwatch {
       minutes: 0,
       seconds: 0,
       miliseconds: 0
-      };
+    };
   }
 
   print() {
@@ -59,17 +59,17 @@ class Stopwatch {
       miliseconds: 0
     };
     this.display.innerText = this.format(this.times);
-    document.getElementById("results").innerHTML = "";
+    document.getElementById('results').innerHTML = '';
   }
 
   save() {
     let lapTime = document.getElementById('stopwatch').innerHTML;
     console.log(lapTime);
 
-    const x = document.createElement("li");
+    const x = document.createElement('li');
     const t = document.createTextNode(lapTime);
     x.appendChild(t);
-    document.getElementById("results").appendChild(x);
+    document.getElementById('results').appendChild(x);
   }
 }
 
